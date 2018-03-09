@@ -1,0 +1,300 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR"
+	content="Mozilla/4.79C-CCK-MCD  [en] (X11; U; SunOS 5.8 sun4u) [Netscape]">
+<title>User Documentation for Bodgitt and Scarper, LLC 
+		Application</title>
+</head>
+<body>
+
+	<h1>
+		<a NAME="top"></a>User Documentation for Bodgitt and Scarper, LLC 
+		Application
+	</h1>
+
+	<h2>Introduction and Index</h2>
+	This document describes how to install, launch and use the application.	This
+	user guide is also available online with the user interface. The images 
+	present in this user guide are stored in the <tt>docs\guide_images</tt> 
+	folder located at the same level as this file.		
+	
+	<p>This guide is divided into the following sections:
+	<ul>
+		<li><b><a href="#install">Application Installation</a></b> - Explains
+		how to install the application</li>
+
+		<li><b><a href="#execution">Application Executation</a></b> - Describes
+		how to run the program</li>
+
+		<li><b><a href="#alone">Standalone Mode</a></b> - Configuration in 
+		Standalone mode</li>
+
+		<li><b><a href="#server">Server Mode</a></b> - Explains how to configure
+		and run the server application</li>
+
+		<li><b><a href="#network">Network Mode</a></b> Describes how to 
+		configure the network mode and how to run the client application</li>
+	</ul>
+
+	<h2>
+		<a NAME="install"></a>Application Installation
+	</h2>
+
+	<H3>Working Directory</H3>
+	
+	To install the application you must have received a <tt>project.jar</tt>
+	file with the contents as requested in the respective project instructions 
+	file. Create a working directory called <tt>suncertify</tt>
+	and place there the <tt>project.jar</tt> file. <p>
+	
+	<img src="guide_imgs\working_dir.jpg"/> 
+		
+	<h3>Content Extraction</h3>
+	
+	Now your are ready to extract the contents of the project, execute the 
+	command like in the window bellow. <p>
+	
+	<img src="guide_imgs\extract_jar.jpg"/> 
+	
+	<h3>Installation Complete</h3>
+	
+	After the execution of the previous command, and if you have configured 
+	correctly the <tt>jdk</tt> in your system, no problem should have occurred.
+	The following strutcture of files must be seen when executing the 
+	<tt>dir</tt> command in the <tt>suncertify</tt> directory. <p>
+	
+	<img src="guide_imgs\after_extract.jpg"/><p>
+	
+	<i><a href="#top">Return to top</a></i>
+	
+	<hr>
+	
+	
+	
+	<h2>
+		<a NAME="execution"></a>Application Execution
+	</h2>
+	
+	<H3>Configuration File</H3>
+	
+	After the installation has terminated succesfully, if you are working in the 
+	<tt>suncertify</tt> directory no problem will occur. But if you intend
+	to execute the commands for running the application in whichever mode, the
+	file with configurations must be copied to the current directory. This file
+	is called <tt>suncertify.properties</tt> and its contents are shown 
+	bellow. <p>
+	
+	<img src="guide_imgs\properties.jpg"/><p>
+	
+	This file contains the default configurations of the application and should
+	not be edited by any user. The user is able to change this configurations 
+	via the graphical user interface of the application. 
+		
+	<h3>Standalone</h3>
+	
+	For the executation of the application in the <tt>standalone</tt> mode 
+	type and execute the following command. <p>
+	
+	<img src="guide_imgs\launch_app.jpg"/> 
+	
+	<h3>Network</h3>
+	
+	For the executation of the application in the <tt>network</tt> mode 
+	type and execute the following command. <p>
+	
+	<img src="guide_imgs\launch_net.jpg"/><p>
+	
+	<h3>Server</h3>
+	
+	For the executation of the application in the <tt>server</tt> mode 
+	type and execute the following command. <p>
+	
+	<img src="guide_imgs\launch_server.jpg"/><p>	
+	
+	<i><a href="#top">Return to top</a></i>
+	
+	<hr>
+	
+	
+	
+	<h2>
+		<a NAME="alone"></a>Standalone Mode
+	</h2>
+	
+	<H3>Database Path Configuration</H3>	
+	
+	After the executation of the command for the <tt>standalone</tt> mode
+	the following windows appears. <p>
+	
+	<img src="guide_imgs\start_alone.jpg"/><p>
+	
+	In this mode, the user is only able to configure the database path. The 
+	port number is disabled and is only enabled for the <tt>network</tt> mode.
+	<p>
+	
+	The database path can be configured directly in the previous window, or by 
+	pressing in the <b>Change</b> button, where the following standard file
+	menu is shown. <p>
+	
+	<img src="guide_imgs\change_db.jpg"/><p>
+	
+	After the path is configured as desired the user should press the 
+	<b>Connect</b> button. The application running has the same functionality 
+	being executed in the <tt>standard</tt> or <tt>network</tt> mode, so the
+	remaining description can be seen in the section 
+	<a href="#network">Network Mode</a>. <p>	
+			
+	<i><a href="#top">Return to top</a></i>
+	
+	<hr>
+
+
+
+	<h2>
+		<a NAME="server"></a>Server Mode
+	</h2>
+
+	<H3>Server Configuration</H3>	
+	
+	When the server starts the following configuration menu should appear. <p>
+	
+	<img src="guide_imgs\start_server.jpg"/><p>
+	
+	This menu allows the user to configure the database path and also the
+	port number where the server will be listening for requests.
+	
+	<H3>Default Configurations</H3>	
+	
+	In the server interface, exists a menu bar where the user can quit the 
+	application or change the default values of the database path or port 
+	number. <p>
+	
+	<img src="guide_imgs\server_config.jpg"/><p>	
+	
+	If the user presses in the <b>Local Path</b> menu item the following popup
+	menu appears. <p>
+	
+	<img src="guide_imgs\server_local_path.jpg"/><p>		
+		
+	<H3>Server Running</H3>		
+	
+	After the user server configurations have been concluded, the user can start
+	the server by pressing the <b>Start</b> button. With the exception of the 
+	<b>Exit</b> button the remaining fields will be disabled. <p>
+		
+	<img src="guide_imgs\server_running.jpg"/><p>				
+			
+	<i><a href="#top">Return to top</a></i>
+	
+	
+	
+	<h2>
+		<a NAME="network"></a>Network Mode
+	</h2>
+	
+	<H3>Network Configuration</H3>	
+	
+	After the appropriate command for running the application in the 
+	<tt>network</tt> is executed, the following configuration window is shown. 
+	<p>
+	
+	<img src="guide_imgs\start_net.jpg"/><p>		
+	
+	This menu, allows the user to configure the hostname or ip address of the 
+	server to connect and the port number where the server is listening 
+	requests. The <b>Change</b> button in this case allows the user to choose
+	a mapped network drive.
+		
+	<H3>Application Main Window</H3>	
+	
+	After the user as terminated the configurations and pressed the 
+	<b>Connect</b> button, the main application window is made visible. <p>
+	
+	<img src="guide_imgs\application.jpg"/><p>	
+	
+	The table with the database information is empty to avoid problems if the 
+	database had an extremely large size.
+	
+	<H3>Search for Services</H3>	
+	
+	To search for all the services in the database the user should press the 
+	<b>Search</b> button. <p>
+	
+	<img src="guide_imgs\app_search.jpg"/><p>		
+	
+	<H3>Filter the Results</H3>	
+	
+	The previous search returned all services in the database, moste of the 
+	times the user will want to search for more specific services, that can 
+	be accomplished using the filters. In the image bellow the search was made
+	by filling the <tt>Name</tt> and <tt>Hourly Charge</tt> fields and pressing
+	in the <b>Search</b> button. <p>
+	
+	<img src="guide_imgs\app_filter.jpg"/><p>
+	
+	<H3>Clear the Filters</H3>	
+	
+	To clear the previous chosen filters the user should press the <b>Clear</b>
+	button and the table is also updated with all services in the database. <p>
+	
+	<img src="guide_imgs\app_clear.jpg"/><p>		
+	
+	<H3>Booking</H3>	
+	
+	Besides searching for services the user will mainly book the same services.
+	The booking can be done by selecting a desired line in the table and than
+	pressing the <b>Book</b> button. A popop menu will be presented to the user 
+	where it will be possible to introduce the customer id that is booking 
+	the selected service.<p>
+	
+	<img src="guide_imgs\app_book1.jpg"/><p>
+	
+	If the booking is successfull, the <tt>Customer ID</tt> column will be 
+	updated in the table with the respective number. <p>
+	
+	<img src="guide_imgs\app_book2.jpg"/><p>	
+	
+	<H3>Returning a Service</H3>	
+	
+	For returning a service the user should, again, select the desired service
+	in the table and than press the <b>Return</b> button. <p>
+	
+	<img src="guide_imgs\app_ret.jpg"/><p>	
+	
+	<H3>Booking Error</H3>	
+	
+	When the user tries to book a service, that is already booked the following
+	error will be shown to the user. <p>
+	
+	<img src="guide_imgs\app_book_error.jpg"/><p>		
+	
+	<H3>Default Configurations</H3>	
+	
+	The default configurations for the database path can be edited in the 
+	<b>Default Configurations</b> menu. <p>
+	
+	<img src="guide_imgs\app_config.jpg"/><p>
+	
+	<H3>Changing Default Port Number</H3>	
+	
+	The next figure, shows the menu item when the user wants to the change the
+	default port. <p>
+	
+	<img src="guide_imgs\app_config_port.jpg"/><p>				
+	
+	<H3>Help Menu</H3>	
+	
+	The application also has an help menu as shown bellow. <p>
+	
+	<img src="guide_imgs\app_help.jpg"/><p>		
+	
+	This file, <tt>userguide.html</tt>, can be accessed in the application by 
+	choosing the <b>Help Contents</b> menu item. <p>
+	
+	<img src="guide_imgs\app_help_detail.jpg"/><p>				
+		
+	<i><a href="#top">Return to top</a></i>		
+</body>
+</html>
